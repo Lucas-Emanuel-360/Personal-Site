@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #090714;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    padding: 25px;
+    background-color: #06040e;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.text {
+  color: snow;
+    background-image: linear-gradient(
+      to right,
+      crimson,
+      rgb(220, 20, 60) 50%,
+      rgb(255, 255, 255) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .text:before{
+    content: '';
+    background: crimson;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .text:hover {
+   background-position: 0;
+  }
+  
+  .text:hover::before{
+    width: 100%;
+
+  }
+
+  footer{
+    position: relative;
+    background-color: #06040e;
+    padding: 5px;
+    text-align: center;
+    color: snow;
+  }
+  a .git {
+    margin-left: 2%;
+    width: 40px;
+    height: 75px;
+  filter: invert(20%) sepia(96%) saturate(6533%) hue-rotate(342deg) brightness(89%) contrast(92%);
+  }
+  a .link {
+    width: 33px;
+    height: 70px;
+  filter: invert(20%) sepia(96%) saturate(6533%) hue-rotate(342deg) brightness(89%) contrast(92%);
+  }
+.transition-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    background-color: #06040e;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+  }
+  
+  .transition-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .transition-2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 101;
+    background-color: #06040e;
+    transition: 0.5s ease-out;
+  }
+  
+  .transition-2.is-active {
+
+    left: 0px;
+  }
+  
+  .transition-3 {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: #06040e;
+    transition: 0.5s ease-out;
+  }
+  
+  .transition-3.is-active {
+
+    top: 0;
+  }

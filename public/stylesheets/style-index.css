@@ -1,0 +1,11 @@
+.profile {
+    margin: 50px 15px 50px 15px;
+    background-color: #06040e;
+    padding: 40px;
+    border-radius: 25px;
+}
+.profile img{
+    margin-left: -20px;
+    width: 35%;
+    border-radius: 500px;
+}
